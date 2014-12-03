@@ -1,7 +1,7 @@
-<span class="fa fa-globe fa-5x fa-spin"></span>
 <div class="cities">
-  <h2>Cities</h2>
-  <ul ng-repeat="city in this.cities">
-    <li><a ng-href="/cities/{{city}}">{{city}}</a>
+  <h1>Cities</h1>
+  <p>Weather 'Round The World</p>
+  <ul>
+    <li ng-repeat="city in this.cities"><a ng-href="/cities/{{city}}">{{city}}</a>
   </ul>
 </div>
