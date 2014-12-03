@@ -1,5 +1,40 @@
 body {
   padding: 100px;
   font-family: 'Open Sans',sans-serif;
-  background-color: #FFF;
+  background-color: #012B35;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+h1 {
+  color: #6B949E;
+}
+
+h2 {
+  color: #7A85AD;
+}
+
+h3 {
+  color: #7FBF90;
+}
+
+.forecast {
+  margin: 0 auto;
+  float: left;
+}
+
+.news {
+  margin: 0 auto;
+  float: right;
+  width: 15em;
+}
+
+.cities ul {
+  list-style: none;
+}
+
+.cities li {
+  display: inline-block;
 }

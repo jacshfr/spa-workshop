@@ -1,7 +1,18 @@
 <h1>{{this.cityName}}</h1>
+<h2>Local Date '&' Time</h2>
 
-<h3>Forecast</h3>
-<div>{{this.forecast | json}}</div>
+<section>
+  <div class="forecast">
+    <h1>Forecast</h1>
+    <h3>Current</h3>
+    <div class="current"></div>
+    <h3>Today/Tonight</h3>
+    <div class="today"></div>
+    <h3>Tomorrow</h3>
+    <div class="tomorrow"></div>
+  </div>
 
-<h3>News</h3>
-<div>{{this.news | json}}</div>
+  <div class="news">
+    <h1>News</h1>
+  </div>
+</section>
