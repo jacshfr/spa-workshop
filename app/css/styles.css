@@ -25,8 +25,9 @@ h4 {
   color: grey;
 }
 
-h5 {
+#newsLinks {
   color: white;
+  font-size: .75em;
 }
 
 .forecast {

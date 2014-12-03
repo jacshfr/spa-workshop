@@ -30,9 +30,9 @@
     <h1>News</h1>
     <ul>
       <li data-ng-repeat="new in this.news">
-        <h5>{{new.title}}</h5>
+        <a id="newsLinks" href="{{new.href}}">{{new.title}}<a>
       </li>
     </ul>
-
+    {{this.news}}
   </div>
 </section>
