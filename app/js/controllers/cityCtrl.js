@@ -11,14 +11,15 @@ angular.module('controllers').controller('CityCtrl', function($scope, $routePara
   // http://solutionoptimist.com/2013/12/27/javascript-promise-chains-2/
   geoLocation(this.cityName)
     .then(function(latLong) {
+      // return forecast(latLong[0], latLong[1]);
       return forecast(latLong[0], latLong[1]);
     })
     .then(function(forecast) {
-      self.forecast = forecast.data;
+      self.forecast = forecast.data.currently.temperature;
       return news(self.cityName);
     })
     .then(function(news) {
-      self.news = news;
+      self.news = news[0].title;
     })
     .catch(function(err) {
       $log.error(err);
