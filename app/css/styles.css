@@ -21,6 +21,14 @@ h3 {
   color: #7FBF90;
 }
 
+h4 {
+  color: grey;
+}
+
+h5 {
+  color: white;
+}
+
 .forecast {
   margin: 0 auto;
   float: left;

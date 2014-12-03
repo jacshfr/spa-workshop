@@ -7,30 +7,30 @@
     <h3>Current</h3>
     <div class="current"></div>
       <h4>SUMMARY</h4>
-      {{this.currently.summary}}
+      <h5>{{this.currently.summary}}</h5>
       <h4>TEMPERATURE</h4>
-      {{this.currently.temp}}
+      <h5>{{this.currently.temp}}</h5>
       <h4>WIND</h4>
-      {{this.currently.wind}}
+      <h5>{{this.currently.wind}}</h5>
     <h3>Today/Tonight</h3>
     <div class="today"></div>
       <h4>SUMMARY</h4>
-      {{this.tonight.summary}}
+      <h5>{{this.tonight.summary}}</h5>
       <h4>TEMPERATURE</h4>
-      {{this.tonight.temp}}
+      <h5>{{this.tonight.temp}}</h5>
     <h3>Tomorrow</h3>
     <div class="tomorrow"></div>
      <h4>SUMMARY</h4>
-      {{this.tomorrow.summary}}
+      <h5>{{this.tomorrow.summary}}</h5>
       <h4>LOWEST TEMPERATURE</h4>
-      {{this.tomorrow.temp}}
+      <h5>{{this.tomorrow.temp}}</h5>
   </div>
 
   <div class="news" data-ng-controller="CityCtrl">
     <h1>News</h1>
     <ul>
       <li data-ng-repeat="new in this.news">
-        <span>{{new.title}}</span>
+        <h5>{{new.title}}</h5>
       </li>
     </ul>
 
