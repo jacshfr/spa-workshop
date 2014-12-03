@@ -1,18 +1,38 @@
 <h1>{{this.cityName}}</h1>
 <h2>Local Date '&' Time</h2>
-
+  <h3>{{this.currently.date}}</h3>
 <section>
   <div class="forecast">
     <h1>Forecast</h1>
     <h3>Current</h3>
     <div class="current"></div>
+      <h4>SUMMARY</h4>
+      {{this.currently.summary}}
+      <h4>TEMPERATURE</h4>
+      {{this.currently.temp}}
+      <h4>WIND</h4>
+      {{this.currently.wind}}
     <h3>Today/Tonight</h3>
     <div class="today"></div>
+      <h4>SUMMARY</h4>
+      {{this.tonight.summary}}
+      <h4>TEMPERATURE</h4>
+      {{this.tonight.temp}}
     <h3>Tomorrow</h3>
     <div class="tomorrow"></div>
+     <h4>SUMMARY</h4>
+      {{this.tomorrow.summary}}
+      <h4>LOWEST TEMPERATURE</h4>
+      {{this.tomorrow.temp}}
   </div>
 
-  <div class="news">
+  <div class="news" data-ng-controller="CityCtrl">
     <h1>News</h1>
+    <ul>
+      <li data-ng-repeat="new in this.news">
+        <span>{{new.title}}</span>
+      </li>
+    </ul>
+
   </div>
 </section>
