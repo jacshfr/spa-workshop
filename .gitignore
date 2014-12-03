@@ -4,5 +4,5 @@ dist
 .DS_Store
 bower_components
 tmp
-package.json
+npm-debug.log
 
