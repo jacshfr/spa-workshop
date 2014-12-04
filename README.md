@@ -1,6 +1,8 @@
+[![Build Status](https://travis-ci.org/jacshfr/spa-workshop.svg)](https://travis-ci.org/jacshfr/spa-workshop)
+
 # SPA Workshop
 
-In this workshop you'll be building and deploying an AngularJS single page application on the Aerobatic platform. The app itself is a city portal that displays local information for various cities around the world. This repo provides the basic scaffolding that you can fork to get started. It retrieves the weather for a given city using the [forecast.io API](https://developer.forecast.io/) and local news headlines using the Google News RSS feed. You can see a live demo of this starter template at [http://spa-workshop.aerobaticapp.com](http://spa-workshop.aerobaticapp.com). 
+In this workshop you'll be building and deploying an AngularJS single page application on the Aerobatic platform. The app itself is a city portal that displays local information for various cities around the world. This repo provides the basic scaffolding that you can fork to get started. It retrieves the weather for a given city using the [forecast.io API](https://developer.forecast.io/) and local news headlines using the Google News RSS feed. You can see a live demo of this starter template at [http://spa-workshop.aerobaticapp.com](http://spa-workshop.aerobaticapp.com).
 
 
 ### Getting Started
@@ -27,7 +29,7 @@ Here's some thoughts on how you might improve upon the scaffolded app. These are
 * Show a loading indicator while API calls are in progress.
 * Enhance the current weather conditions to include a future forecast
 * Use the HTML5 location API to auto-suggest which city the current user is in
-* Use a more web friendly representation of the city name in the URL, i.e. `cities/new-york` rather than `cities/New%20York` 
+* Use a more web friendly representation of the city name in the URL, i.e. `cities/new-york` rather than `cities/New%20York`
 * Display a map of the city
 * Show the local date and time in the city
 * Refactor `cityCtrl.js` to make the API calls to the Forecast and News services in parallel rather than serially. How might this code look were a dozen different APIs invoked to build the page? This article may be of use: [http://solutionoptimist.com/2013/12/27/javascript-promise-chains-2/](http://solutionoptimist.com/2013/12/27/javascript-promise-chains-2/).
